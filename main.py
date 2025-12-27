@@ -20,13 +20,3 @@ def error_example():
         logging.error(f"Сталася помилка: {e}")
 
 error_example()
-
-# Завдання 3
-
-def login(username, password):
-    try:
-        assert username == "kiril" and password == "1234", \
-            "Невірне ім'я користувача або пароль"
-        print("Вхід виконано успішно")
-    except AssertionError as e:
-        print(e)
